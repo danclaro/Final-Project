@@ -7,4 +7,6 @@ I-NP: describes that the word is inside of the current noun phrase.
 O: end of the sentence.
 B-VP and I-VP: beginning and inside of a verb phrase.
 
-If I and O tags were utilized exclusively, the lack of a beginning for the chunk would result in overlapping tokens. Chunkers are supposed to create relatively flat data structures so overlap is not allowed.
+If I and O tags were utilized exclusively, the lack of a beginning for the chunk would result in overlapping tokens. 
+Chunkers are supposed to create relatively flat data structures so overlap is not allowed.
+The lack of a boundary between a chunk structure's inside and outside will render the difference between the beginning of an entity & it's nearby continuation undetectable.
