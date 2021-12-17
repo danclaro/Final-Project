@@ -1,1 +1,6 @@
 IOB stands for inside, outside, and begin.
+It is a format for chunks. These tags are similar to part-of-speech tags but can denote the inside, outside, and beginning of a chunk. Not just noun phrase but multiple different chunk phrase types are allowed here.
+B-NP: beginning of a noun phrase
+I-NP: describes that the word is inside of the current noun phrase.
+O: end of the sentence.
+B-VP and I-VP: beginning and inside of a verb phrase.
