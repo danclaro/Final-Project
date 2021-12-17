@@ -4,6 +4,10 @@ the before it to see if it can also be a noun. Now make up a sentence with both 
 
 We used the steel hammer to hammer in the nail.
 
+Today, I decided to drink my favorite drink, apple juice.
+
+We had to milk the cow to get the milk for some homemade ice cream.
+
 184. Plot the frequency distribution just shown using tag_fd.plot(cumulative=True). What percentage of words are tagged using the first five tags of the above list?
 
 186. Given the list of past participles specified by cfd2['VN'].keys(), try to collect a list of all the word-tag pairs that immediately precede items in that list.
