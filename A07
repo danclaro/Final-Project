@@ -2,6 +2,8 @@
 Hint: think of a commonplace object and try to put the word to before it to see if it can also be a verb, or think of an action and try to put 
 the before it to see if it can also be a noun. Now make up a sentence with both uses of this word, and run the POS tagger on this sentence.
 
+We used the steel hammer to hammer in the nail.
+
 184. Plot the frequency distribution just shown using tag_fd.plot(cumulative=True). What percentage of words are tagged using the first five tags of the above list?
 
 186. Given the list of past participles specified by cfd2['VN'].keys(), try to collect a list of all the word-tag pairs that immediately precede items in that list.
