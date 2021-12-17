@@ -14,11 +14,19 @@ the before it to see if it can also be a noun. Now make up a sentence with both 
 
 186. Given the list of past participles specified by cfd2['VN'].keys(), try to collect a list of all the word-tag pairs that immediately precede items in that list.
 
-have, has, been 
+for x in range(len(wsj)): 
+if wsj[x][0] in cfd2['VN'].keys(): 
+print wsj['have' + (x-1):(x+1)]
 
-for i in range(len(wsj)): 
-if wsj[i][0] in cfd2['VN'].keys(): 
-print wsj[(i-1):(i+1)]
+for x in range(len(wsj)): 
+if wsj[x][0] in cfd2['VN'].keys(): 
+print wsj['has' + (x-1):(x+1)]
+
+'have been', 'have expected', 'have made', 'have compared', 'have based', 'have priced', 'have used', 'have sold',
+'have named', 'have designed', 'have held', 'have fined', 'have taken', 'have paid', 'have traded', 'have said',
+
+'has been', 'has expected', 'has made', 'has compared', 'has based', 'has priced', 'has used', 'has sold',
+'has named', 'has designed', 'has held', 'has fined', 'has taken', 'has paid', 'has traded', 'has said',
 
 188. Open the POS concordance tool nltk.app.concordance() and load the complete Brown Corpus (simplified tagset). Now pick some of the words
 listed at the end of the previous code example and see how the tag of the word correlates with the context of the word. E.g., search for near
