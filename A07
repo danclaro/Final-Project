@@ -1,3 +1,38 @@
+1. To get an idea about how difficult it is to unambiguously identify parts-of-speech select several words
+that can be a noun, verb, adjective, and adverb, find their high frequency senses using WordNet, examine
+their definitions and example uses, and try to generate some rules for how to determine as to when they
+are a noun, verb, adjective, or adverb from their context.
+
+Best, Light, Back, Last
+
+if the word is between a determiner ('the'/'a'/'an'/'your'/etc.) and another word that is not a noun, it is a noun.
+
+'My parents always tell me that I'm the best.'
+'The light has been turned off.'
+'The masseuse noticed a lot of tension in the back.'
+'This snack will be the last for tonight.'
+
+if a noun or 'to' is before the word, it is a verb.
+
+'I have to best my competitors in the race.'
+'The fireworks are going to light up the sky.'
+'I feel morally inclined to back this candidate.'
+'This exam is going to last an entire hour.'
+
+if there is a noun after the word, it is an adjective.
+
+'I'm the best boxer in New Jersey.'
+'I'm going to carry some light luggage.'
+'They are playing in the back yard.'
+'The last slice in the pizza box has been taken.'
+
+if the word is adjacent to a verb or after a noun, it is an adverb.
+
+'I work best in person.'
+'I only brought my backpack so I could travel light.'
+'After I realized I left my phone at home, I went back.'
+'The pepperoni slices were eaten last.'
+
 180. Many words, like ski and race, can be used as nouns or verbs with no difference in pronunciation. Can you think of others? 
 Hint: think of a commonplace object and try to put the word to before it to see if it can also be a verb, or think of an action and try to put 
 the before it to see if it can also be a noun. Now make up a sentence with both uses of this word, and run the POS tagger on this sentence.
