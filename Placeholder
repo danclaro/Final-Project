@@ -1,5 +1,7 @@
+1. The IOB format categorizes tagged tokens as I, O and B. Why are three tags necessary? What problem would be caused if we used I and O tags exclusively?
+
 IOB stands for inside, outside, and begin.
-It is a format for chunks. These tags are similar to part-of-speech tags but can denote the inside, outside, and beginning of a chunk. Not just noun phrase but multiple different chunk phrase types are allowed here.
+IOB tags are often the standard format for chunks in files. These tags are similar to part-of-speech tags but can denote the inside, outside, and beginning of a chunk. Not just noun phrase but multiple different chunk phrase types are allowed here.
 B-NP: beginning of a noun phrase
 I-NP: describes that the word is inside of the current noun phrase.
 O: end of the sentence.
