@@ -16,11 +16,11 @@ the before it to see if it can also be a noun. Now make up a sentence with both 
 
 for x in range(len(wsj)): 
 if wsj[x][0] in cfd2['VN'].keys(): 
-print wsj['have' + (x-1):(x+1)]
+print wsj['have ' + (x-1):(x+1)]
 
 for x in range(len(wsj)): 
 if wsj[x][0] in cfd2['VN'].keys(): 
-print wsj['has' + (x-1):(x+1)]
+print wsj['has ' + (x-1):(x+1)]
 
 'have been', 'have expected', 'have made', 'have compared', 'have based', 'have priced', 'have used', 'have sold',
 'have named', 'have designed', 'have held', 'have fined', 'have taken', 'have paid', 'have traded', 'have said',
