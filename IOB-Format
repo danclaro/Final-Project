@@ -14,3 +14,4 @@ Three tags are necessary because a boundary tag will prevent the two other tags 
 If I and O tags were utilized exclusively, the lack of a beginning for the chunk would result in overlapping tokens. 
 Chunkers are supposed to create relatively flat data structures so overlap is not allowed.
 The lack of a boundary between a chunk structure's inside and outside will render the difference between the beginning of an entity & it's nearby continuation undetectable.
+In other words, 1 long chunk and 2 small chunks adjacent to each other would be impossible to detect without the B tag.
