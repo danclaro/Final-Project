@@ -1,1 +1,11 @@
-Hello
+180. Many words, like ski and race, can be used as nouns or verbs with no difference in pronunciation. Can you think of others? 
+Hint: think of a commonplace object and try to put the word to before it to see if it can also be a verb, or think of an action and try to put 
+the before it to see if it can also be a noun. Now make up a sentence with both uses of this word, and run the POS tagger on this sentence.
+
+184. Plot the frequency distribution just shown using tag_fd.plot(cumulative=True). What percentage of words are tagged using the first five tags of the above list?
+
+186. Given the list of past participles specified by cfd2['VN'].keys(), try to collect a list of all the word-tag pairs that immediately precede items in that list.
+
+188. Open the POS concordance tool nltk.app.concordance() and load the complete Brown Corpus (simplified tagset). Now pick some of the words
+listed at the end of the previous code example and see how the tag of the word correlates with the context of the word. E.g., search for near
+to see all forms mixed together, near/ADJ to see it used as an adjective, near N to see just those cases where a noun follows, and so forth.
