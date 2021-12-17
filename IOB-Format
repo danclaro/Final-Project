@@ -9,7 +9,7 @@ B-VP and I-VP: beginning and inside of a verb phrase.
 It is used for tagging tokens in a chunking task such as named-entity recognition.
 These tags are similar to part-of-speech tags but give us information about the location of the word in the chunk.
 It assigns a tag to each word in the text, determining whether it is the beginning (B) of a known named entity, inside (I) it, or outside (O) of any known named entities.
-Three tags are necessary because .
+Three tags are necessary because a boundary tag will prevent the two other tags from overlapping.
 
 If I and O tags were utilized exclusively, the lack of a beginning for the chunk would result in overlapping tokens. 
 Chunkers are supposed to create relatively flat data structures so overlap is not allowed.
