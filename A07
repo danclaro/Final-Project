@@ -40,7 +40,8 @@ You may use any version of distance that you like.
 
 Drive is closer to divers than it is to brief.
 
-When you look at the proximity between 2 strings, the
+When you look at the proximity between 2 strings, you can calculate the edit distance
+as the minimum number of single character edit to convert one string into other.
 
     B R I E F           D I V E R S
   0 1 2 3 4 5         0 1 2 3 4 5 6
@@ -58,9 +59,47 @@ drive -> (delete v) drie (+1) -> (insert f) drief (+1) -> (delete d & insert b) 
 
 The edit distance between drive and brief is 4.     3 < 4       divers < brief
 
-5.2
+5.2     Now implement a minimum edit distance algorithm and use your handcomputed results to check your code.
 
-5.3
+#include <bits/stdc++.h>
+using namespace std;
+
+int min(int j, int k, int l) { return min(min(j, k), l); }
+
+int min_edit_distance(string str1, string str2, int x, int y)
+{
+
+   int ed[x + 1][y + 1];
+
+   for (int a = 0; a <= x; a++) {
+       for (int b = 0; b <= y; b++) {
+
+           if (b == 0) {
+               ed[a][b] = a; 
+               }
+           else if (str1[a - 1] == str2[b - 1]) {
+               ed[a][b] = ed[a - 1][b - 1]; 
+               }
+           else if (a == 0) {
+               ed[a][b] = b; 
+               }
+           else {
+               ed[a][b] = 1 + min(ed[a][b - 1], ed[a - 1][b], ed[a - 1][b - 1]); }
+            }
+   }
+
+   return ed[x][y];
+}
+
+
+int main()
+{
+   string ex1 = "drive";
+   string ex2 = "divers";
+
+   cout << min_edit_distance(drive, divers, ex1.length(),
+                   ex2.length());
+}
 
 3.
 
