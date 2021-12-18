@@ -33,6 +33,19 @@ if the word is adjacent to a verb or after a noun, it is an adverb.
 'After I realized I left my phone at home, I went back.'
 'The pepperoni slices were eaten last.'
 
+2.
+
+5.1 Computing minimum edit distances by hand, figure out whether drive is closer to brief or to divers, and what the edit distance is.
+You may use any version of distance that you like.
+
+Drive is closer to
+
+5.2
+
+5.3
+
+3.
+
 180. Many words, like ski and race, can be used as nouns or verbs with no difference in pronunciation. Can you think of others? 
 Hint: think of a commonplace object and try to put the word to before it to see if it can also be a verb, or think of an action and try to put 
 the before it to see if it can also be a noun. Now make up a sentence with both uses of this word, and run the POS tagger on this sentence.
